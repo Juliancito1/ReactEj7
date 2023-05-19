@@ -1,0 +1,9 @@
+.listado{
+    width: 500px;
+}
+
+@media (width <= 767px){
+    .listado{
+        width: 300px;
+    }
+}
