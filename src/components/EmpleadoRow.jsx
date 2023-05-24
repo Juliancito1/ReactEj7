@@ -5,9 +5,9 @@ import EmpleadoAvatar from './EmpleadoAvatar';
 const EmpleadoRow = ({empleados}) => {
     return (
         empleados.map(empleado => (
-        <section className='container bg-dark text-light border border-3 border-light' key={empleado.id}>
+        <section className='container bg-light text-dark border border-1 border-dark' key={empleado.id}>
             <article className='row'>
-            <EmpleadoAvatar/>
+            <EmpleadoAvatar src={empleado.pic}></EmpleadoAvatar>
             <div className='col-12 col-md-6'>
                 <h5>{empleado.fullName}</h5>
                 <h6 className='mt-4'>{empleado.title} <Badge bg="info">{empleado.department}</Badge></h6>
